@@ -20,7 +20,7 @@
 \begin{center}\textbf{Ementa}\end{center}
 \noindent\rule{16.2cm}{0.4pt}
 \\
-Fundamentos de Sistemas Distribuídos. Estilos Arquiteturais para Sistemas Distribuídos. Arquitetura de Comunicação Cliente-Servidor. Comunicação: Sockets, RPC, RMI, MOM. Sistemas de arquivos distribuídos; Sistemas \textit{peer-to-peer}; Sincronização e estados globais; Transações; Replicação e tolerância a falhas; Serviços Web.\\ 
+Fundamentos de Sistemas Distribuídos. Arquitetura de Comunicação Cliente-Servidor. Objetos distribu\'idos e invoca\c{c}\~ao remota. Sistemas \textit{peer-to-peer} (P2P); Sistemas de arquivos distribuídos; Sincronização e coordena\c{c}\~ao; Transações e controle de concorr\^encia; Replicação e tolerância a falhas; Serviços Web; T\'opicos especiais em sistemas distribu\'idos.\\ 
 \noindent\rule{16.2cm}{0.4pt}\\
 %PREENCHER OS OBJETIVOS A SEGUIR
 \begin{center}\textbf{Objetivos}\end{center}
@@ -38,20 +38,27 @@ Fundamentos de Sistemas Distribuídos. Estilos Arquiteturais para Sistemas Distr
 \noindent\rule{16.2cm}{0.4pt}
 \\
 \begin{itemize}
- \item \textbf{Fundamentos de Sistemas Distribuídos:} Definição de Sistemas Distribuídos; Infraestrutura básica; Tipos de Sistemas Distribuídos.
+ \item \textbf{Fundamentos de Sistemas Distribuídos:} Definição de Sistemas Distribuídos; Infraestrutura básica; Tipos de Sistemas Distribuídos. Modelos de Sistemas Distribu\'idos.
 
- \item \textbf{Estilos Arquiteturais para SD:} Camadas; Baseada em Objetos; Baseada em Dados; Baseada em Eventos.
+% \item \textbf{Estilos Arquiteturais para SD:} Camadas; Baseada em Objetos; Baseada em Dados; Baseada em Eventos.
 
- \item \textbf{Visão Cliente-Servidor:} Requisição-Resposta; Comunicação síncrona; Comunicação assíncrona.
+ \item \textbf{Arquitetura de Comunicação Cliente-Servidor:} Requisição-Resposta; Comunicação síncrona; Comunicação assíncrona; Exemplos de sistemas cliente-servidor na Web.
+  
+ \item \textbf{Objetos distribu\'idos e invoca\c{c}\~ao remota:} RPC, RMI, MOM:
 
- \item \textbf{P2P:} Arquitetura Centralizada; Arquitetura Descentralizada.
- \item \textbf{Processos e Threads}
- \item \textbf{Comunicação:} Sockets; RPC; RMI; JMS.
+ \item \textbf{Sistemas \textit{peer-to-peer} (P2P):} \textit{Middleware} para sistemas P2P; Sobreposi\c{c}\~ao de roteamento; Mecanismos de busca; Exemplos de sistemas P2P.
 
- \item \textbf{Serviços:} Conceitos; Arquitetura Orientada a Serviço; Tipos de Serviços; Design de Serviços; Registro e descoberta; Web Services.
+ \item \textbf{Sistemas de arquivos distribuídos:} Arquitetura e requisitos de servi\c{c}os de arquivos; Exemplos de sistemas de arquivos distribu\'idos.
 
- \item \textbf{Tolerância a Faltas:} Definição; Dependabilidade; Tipos; Recuperação; Mascaramento.
- \item \textbf{Sincronização:} Cálculo de Latência; Ajuste de relógios.
+ \item \textbf{Sincronização e coordena\c{c}\~ao:} Rel\'ogios, eventos e estados de processo; Sincroniza\c{c}\~ao de rel\'ogios f\'isicos; Tempo l\'ogico e rel\'ogios l\'ogicos; Estados globais; Exclus\~ao m\'utua distribu\'ida; Elei\c{c}\~ao de l\'ider; Comunica\c{c}\~ao \textit{multicast}.
+
+ \item \textbf{Transações e controle de concorr\^encia:} Transa\c{c}\~oes; Transa\c{c}\~oes aninhadas; Travas e bloqueios; Controle de concorr\^encia; Transa\c{c}\~oes distribu\'idas planas e aninhadas; Protocolos de efetiva\c{c}\~ao at\^omica; Controle de concorr\^encia e impasses distribu\'idos; Recupera\c{c}\~ao de transa\c{c}\~oes.
+
+\item \textbf{Replicação e tolerância a falhas:} Servi\c{c}os tolerantes a falhas; Estudos de caso de servi\c{c}oes de alta disponibilidade; Transa\c{c}\~oes com replica\c{c}\~ao de dados.
+
+\item \textbf{Serviços Web:} Conceitos; Arquitetura orientada a servi\c{c}o; Tipos de servi\c{c}os; Design de servi\c{c}os; Registro e descoberta; Web Services; Grades computacionais.
+
+\item \textbf{T\'opicos especiais em sistemas distribu\'idos:} Conte\'udo vari\'avel abordando t\'opicos atuais em sistemas distribu\'idos, por exemplo: sistemas m\'oveis, computa\c{c}\~ao ub\'iqua, redes de sensores sem fio, sistemas multim\'ida distribu\'idos; Computa\c{c}\~ao na nuvem.
 \end{itemize}
 \noindent\rule{16.2cm}{0.4pt}\\
 \\
@@ -65,7 +72,7 @@ Fundamentos de Sistemas Distribuídos. Estilos Arquiteturais para Sistemas Distr
 \begin{center}\textbf{Avaliação do Processo de Ensino e Apendizagem}\end{center}
 \noindent\rule{16.2cm}{0.4pt}
 \\
-   Avaliações escritas ao final de cada unidade. Prática baseada em Estudo de Caso ou problema real.\\
+   Avaliações escritas. Práticas baseadas em Estudos de Caso ou problemas reais.\\
 \noindent\rule{16.2cm}{0.4pt}\\
 \\
 %PREENCHER RECURSOS NECESSARIOS A SEGUIR
@@ -89,7 +96,19 @@ Fundamentos de Sistemas Distribuídos. Estilos Arquiteturais para Sistemas Distr
 \\
 \begin{itemize} 
   \item Básica;
+	\begin{enumerate}
+	\item Coulouris, Dollimore e Kindberg, Sistemas distribuídos, conceito e projeto (quinta edição). ISBN 9788582600535. Bookman, 2013.
+	\item Tanenbaum e van Steen, Sistemas distribuídos, princípios e paradigmas (segunda edição). ISBN 9788576051428. Pearson, 2007.
+	\end{enumerate}
   \item Complementar;
+	\begin{enumerate} 
+	\item Mullender, S. (Editor), Distributed Systems, Addison Wesley Publishing Company; 2nd edition, ISBN: 0-2016-2427-3, 1993.\\
+        \\
+	Artigos cient\'ificos de peri\'odicos como: 
+	\item IEEE Transactions on Parallel and Distributed Systems. IEEE Computer Society. ISSN: 1045-9219;
+	\item Distributed Computing Journal. Springer. ISSN: 0178-2770 (print version), ISSN: 1432-0452 (electronic version);
+	\item Journal of Parallel and Distributed Systems. Elsevier. ISSN: 0743-7315.
+	\end{enumerate}
 \end{itemize}
 \noindent\rule{16.2cm}{0.4pt}\\
 \\
