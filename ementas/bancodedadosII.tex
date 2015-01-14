@@ -1,4 +1,4 @@
-\paragraph{Bancos de Dados I}
+\paragraph{Bancos de Dados II}
 
 %PREENCHER DADOS DA DISCIPLINA A SEGUIR
 %\vspace{-12mm}
@@ -6,11 +6,11 @@
 \vspace{-5mm}
 \noindent\rule{16.5cm}{0.4pt}
 \\
-\textbf{Nome:} Bancos de Dados I
+\textbf{Nome:} Bancos de Dados II
 \\
 \textbf{Curso:} Tecnologia em Sistemas para Internet
 \\ 
-\textbf{Período:} $3^{\circ}$ 
+\textbf{Período:} $4^{\circ}$ 
 \\
 \textbf{Carga Horária:} 67~h 
 \\ 
@@ -23,9 +23,8 @@
 \begin{center}\textbf{Ementa}\end{center}
 \vspace{-5mm}
 \noindent\rule{16.5cm}{0.4pt}
-\\ 
-Introdução a bancos de dados. Conceitos básicos e terminologias de bancos de dados. Sistemas de Gerenciamento de Bancos de Dados. Modelos e esquemas de dados. Modelo entidade-relacionamento. O modelo relacional. Álgebra relacional. Linguagem de consulta estruturada (SQL). Projeto de bancos de dados relacional: normalização, restrições, índices, chaves primária e estrangeira. Visões. Subprogramas armazenados e gatilhos. Controle transacional. 
- \\
+\\
+Bancos de dados orientados a objeto: ODMG, ODL e OQL. Bancos de dados objeto-relacional. Projeto de bancos de dados objeto-relacional: modelos conceitual e lógico. Consultas em bancos de dados objeto-relacional. Banco de dados geográficos. Bancos de dados distribuídos. Novas aplicações de bancos de dados.\\
 
 \noindent\rule{16.5cm}{0.4pt}\\
 \\
@@ -36,10 +35,11 @@ Introdução a bancos de dados. Conceitos básicos e terminologias de bancos de 
 \noindent\rule{16.5cm}{0.4pt}
 \\
 \begin{itemize}
-\item Compreender os conceitos fundamentais de banco de dados;
-\item Construir modelos conceituais de banco de dados usando o modelo de entidade-relacionamento;
-\item Desenvolver modelos lógicos relacionais baseados em modelos conceituais;
-\item Saber utilizar a linguagem SQL para recuperar e manipular informações em um banco de dados relacional.
+\item Compreender os conceitos fundamentais dos bancos de dados orientado a objetos, objeto-relacional, geográfico e distribuído;
+\item Diferenciar os bancos de dados orientado a objetos, objeto-relacional, geográfico e distribuído;
+\item Realizar a integração entre aplicações e os bancos de dados orientado a objetos, objeto-relacional, geográfico e distribuído.
+
+
 \end{itemize}
 \noindent\rule{16.5cm}{0.4pt}\\
 \\
@@ -50,14 +50,15 @@ Introdução a bancos de dados. Conceitos básicos e terminologias de bancos de 
 \noindent\rule{16.5cm}{0.4pt}
 \\
 \begin{itemize}
- \item \textbf{Conceitos Básicos de Banco de Dados:} Dados e Informação; Banco de Dados; Sistemas Gerenciadores de Bancos de Dados; Tipos de usuários.
+ \item \textbf{Banco de Dados Geográficos:} Conceitos básicos;	Representação de dados (Open Geospatial Consortium); PostgreSQL com PostGIS; Importação de dados espaciais; Consultas espaciais; Java Topology Suite (JTS); Representação de mapas em SVG.
  
- \item \textbf{Modelagem Conceitual:} Modelo de Entidade-Relacionamento: Entidades, Atributos, Relacionamentos; Modelo de Entidade-Relacionamento Estendido: Especialização e Generalização. 
+ \item \textbf{Banco de Dados Orientados a Objetos:} Conceitos básicos; O padrão ODMG; ODL: Estrutura de classes, Construtores, Identidade de Objetos, Coleções estáticas e dinâmicas, Nomeação e alcançabilidade; OQL: Consultas, Subconsultas, Expressões de caminho.
 
- \item \textbf{Modelo Relacional:} Conceitos do Modelo Relacional; Operações com Relações; Álgebra Relacional: Operação Seleção e Projeção, União, Interseção, Diferença, Produto Cartesiano, Junção, Divisão, Projeto de Banco de Dados Relacional: Mapeamento do modelo entidade-relacionamento para o modelo relacional, Regras e Normalização.
+ \item \textbf{Banco de Dados Objeto-Relacional:} Conceitos básicos; Tipos Complexos; Construtores;	Métodos; Coleções estáticas e dinâmicas; Tabelas de objetos; Tabelas aninhadas; Referências para Tipos Complexos; Herança; Consultas com tipos complexos.
  
- \item \textbf{Linguagem SQL:} Introdução à Linguagem SQL; Utilização das instruções das seguintes sub-linguagens: Linguagem de Definição de Dados (DDL), Linguagem de Manipulação de Dados (DML), Linguagem de Consulta de Dados (DQL), Linguagem de Controle de Dados (DCL), Linguagem de Transação de Dados (DTL); Visões, Subprogramas Armazenados e Gatilhos.
+ \item \textbf{Bancos de Dados Distribuídos:} Bancos de Dados Centralizados x Distribuídos; Tipos de Banco de Dados Distribuído; Projeto de Banco de Dados Distribuído; Processamento de Consultas.
 
+\item \textbf{Banco de Dados NoSQL:} Conceitos básicos; Modelo de Dados: Chave-valor, Orientado a Colunas, Orientado a Documentos e Orientado a Grafos.
  
 \end{itemize}
 \noindent\rule{16.5cm}{0.4pt}\\
@@ -113,8 +114,8 @@ Introdução a bancos de dados. Conceitos básicos e terminologias de bancos de 
     
   \item Complementar:
 	\begin{enumerate}
-  	\item 	HEUSER, C. \textbf{Projeto de Banco de Dados – Série UFRGS, Nº 4.} Sagra-Luzzatto, 5ª edição, 2004;
-	\item 	GARCIA-MOLINA, H. \textbf{Implementação de Sistemas de Banco de Dados.} Campus, 1ª edição, 2010;
+  	\item 	CASANOVA, M, et al. \textbf{Bancos de Dados Geográficos}. INPE, 2005; 
+	\item 	FOWLER, M.; SADALAGE, P. J. \textbf{NoSQL Essencial: Um Guia Conciso Para O Mundo Emergente Da Persistência Poliglota.} Novatec, 1ª Edição, 2013;
     \item 	RAMAKRISHNAN, R. \textbf{Sistemas de Gerenciamento de Banco de Dados.} McGraw Hill, 3ª edição, 2010.
 	\end{enumerate}
 \end{itemize}
