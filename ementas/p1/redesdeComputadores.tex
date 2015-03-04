@@ -8,7 +8,7 @@
 
 \noindent 	\textbf{Nome:} Redes de Computadores
 \\ 			\textbf{Curso:} Tecnologia em Sistemas para Internet
-\\ 			\textbf{Período:} \unit{2}{\degree}
+\\ 			\textbf{Período:} \unit{1}{\degree}
 \\ 			\textbf{Carga Horária:} \unit{67}{\hour}
 \\ 			\textbf{Docente Responsável:} Erick Augusto Gomes de Melo
 
@@ -19,7 +19,9 @@
 \vphantom{q}}\end{center}\end{snugshade}
 
 \noindent
-Apresentação da natureza dos serviços prestados pela Internet; Apresentação de duas categorias de aplicações: paradigma Cliente-Servidor e \textit{Peer-to-Peer}; Discussão sobre o conceito do paradigma Cliente-Servidor e como ele fornece serviços para os usuários da Internet; Descrição de aplicações predefinidas ou padrões com base no paradigma Cliente-Servidor; Discussão sobre o conceito do paradigma \textit{Peer-to-Peer}; Apresentação de alguns protocolos \textit{Peer-to-Peer} e de aplicativos populares que utilizam tais protocolos; Protocolos multimídia.
+
+Introdução à comunicação em rede; Classificação das redes quanto à área de cobertura; Processo de comunicação em redes de computadores com base nos modelos de referência OSI e TCP/IP; Funções desempenhadas pelas principais tecnologias de transmissão de dados; Mecanismo de interconexão de redes proposto pelo modelo TCP/IP; Função dos protocolos de suporte às aplicações de rede do modelo TCP/IP; Planejamento e implantação de uma rede simples.
+
 % Objetivos
 
 \begin{snugshade}\begin{center}\textbf{
@@ -29,12 +31,14 @@ Apresentação da natureza dos serviços prestados pela Internet; Apresentação
 
 \begin{itemize}
 
-\item Compreender os serviços prestados pela camada de aplicação e como as outras quatro camadas do modelo TCP/IP dão suporte a esses serviços;
-\item Compreender a natureza dos serviços prestados pela Internet;
-\item Conhecer as categorias de aplicações utilizadas na Internet;
-\item Discutir os conceitos dos paradigmas Cliente-Servidor e \textit{Peer-to-Peer};
-\item Apresentar aplicações que fazem uso dos paradigmas Cliente-Servidor e \textit{Peer-to-Peer};
-\item Conhecer os principais protocolos utilizados em aplicações multimídia.
+\item Compreender os fundamentos básicos sobre redes de computadores e utilizar seus recursos para suportar as atividades relacionadas ao desenvolvimento de programas computacionais;
+\item Compreender a necessidade e a importância das redes de computadores;
+\item Conhecer definições básicas sobre redes de computadores;
+\item Compreender o processo de comunicação em redes de computadores com base nos modelos de referencia OSI e TCP/IP;
+\item Compreender as funções desempenhadas pelas principais tecnologias de transmissão de dados;
+\item Analisar e explicar o mecanismo de interconexão de redes proposto pelo Modelo TCP/IP;
+\item Analisar e explicar a função dos protocolos de suporte às aplicações de rede do Modelo TCP/IP;
+\item Planejar e Implantar uma rede simples.
 
 \end{itemize} 
 
@@ -46,13 +50,24 @@ Apresentação da natureza dos serviços prestados pela Internet; Apresentação
 
 \begin{itemize}
 
- \item \textbf{Introdução:} Fornecendo Serviços; Paradigmas da camada de aplicação;
- \item \textbf{Paradigma Cliente-Servidor:} Interface de programação de aplicativos; Usando serviços da camada de transporte;
- \item \textbf{Aplicações Cliente-Servidor padronizadas:} \textit{Word Wide Web} e HTTP; FTP; Correio eletrônico; Telnet; \textit{Secure shell}; Sistemas de nomes de domínio;
- \item \textbf{Paradigmas \textit{Peer-to-Peer}:} Redes P2P; Tabela de \textit{hash} distribuída; Chord; Pastry; Kademlia; A rede BitTorrent;
- \item \textbf{Programação usando a interface \textit{socket}:} Interface socket em C;
- \item \textbf{Multimídia na Internet};
- \item \textbf{Protocolos Interativos em tempo real:} Justificativa para novos protocolos; RTP; RTCP; Protocolos de iniciação de sessão; H.323; SCTP.
+ \item Histórico e evolução das redes de computadores;
+ \item Conceito de redes de computadores;
+ \item Visão Geral das LANS, WANS e Inter-redes;
+ \item Modelo de Referência de Redes OSI e TCP/IP: Camada, funções, encapsulamento e PDUs;
+ \item Serviços, protocolos e aplicações de rede;
+ \item Funções da camada de rede;
+ \item Vantagens da segmentação de rede provida pelo protocolo IP;
+ \item Encaminhamento IP e roteamento IP (Estático e Dinâmico);
+ \item Teste de conectividade entre redes e o protocolo ICMP;
+ \item Funções da Camada de Enlace de Dados;
+ \item Controle de acesso ao meio;
+ \item Enquadramento, endereçamento físico;
+ \item Funções da camada física;
+ \item Sinalização e codificação;
+ \item Meios físicos de transmissão (coaxial, UTP, fibra óptica e meios sem fio) e seus conectores;
+ \item Tecnologia de transmissão \textit{ethernet} (visão geral);
+ \item Repetidores, \textit{hubs}, \textit{bridges} e \textit{switches ethernet};
+ \item Operação do \textit{ethernet}:comunicação com camadas superiores, enquadramento, detecção de erros e o CRC, controle de acesso pelo CSMA/CD, endereçamento MAC e protocolo ARP.
  
 \end{itemize}
 
@@ -91,9 +106,9 @@ Apresentação da natureza dos serviços prestados pela Internet; Apresentação
 \begin{itemize} 
   \item Básica:
 	\begin{enumerate}
-	\item FOROUZAN, Behrouz A.; MOSHARRAF, Firouz. Redes de Computadores - Uma Abordagem Top-Down - 2012. 1 ed. Editora Mcgraw Hill, 2012.
 	\item KUROSE, J. F., ROSSA, K. W. Redes de computadores e a internet. 5 ed. Editora Pearson. 2010.
 	\item TANENBAUM, A. S., WETHERALL, D. Redes de Computadores. 5 ed. Editora Pearson. 2011. 
+	\item FOROUZAN, Behrouz A.; MOSHARRAF, Firouz. Redes de Computadores - Uma Abordagem Top-Down - 2012. 1 ed. Editora Mcgraw Hill, 2012.	
 	\end{enumerate}
   \item Complementar:
 	\begin{enumerate} 
